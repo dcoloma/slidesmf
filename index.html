@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>WebApps Mythbusting</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="css/screen.css">
+	<style>
+		#Cover h2 {
+			position:absolute;
+			top:140px;
+			right:0;
+			left:180px;
+			color:#FFF;
+			text-shadow:10px 0 20px rgba(0, 0, 0, 0.5);
+			font-size:110px;
+			}
+			#Cover h2 span {
+				display:block;
+				text-indent:35px;
+				font-size:52px;
+				}
+		#Chair h2,
+		#ChairO h2,
+		#ChairMs h2,
+		#ChairMoz h2,
+		#ChairWebkit h2 {
+			font-size:90px;
+			}
+		#PyramidFalse,
+		#WrongPyramid {
+			background:#FFF url(pictures/pyramid-false.svg) 92% 100% no-repeat;
+			}
+		#PyramidTrue {
+			background:#FFF url(pictures/pyramid-true.svg) 50% 0 no-repeat;
+			}
+		#LastAgain h2 {
+			font-size:90px;
+			}
+			#LastAgain h2 strong {
+				color:#0174A7;
+				}
+		#Seriously {
+			background:#000;
+			}
+		#Seriously H2 {
+			color:#FFF;
+			}
+		#PrefixFree {
+			background:#FFF url(pictures/prefix-free.png) 795px 370px no-repeat;
+			}
+		#Preprocess {
+			background:
+				url(pictures/sass.png) 738px 211px no-repeat,
+				url(pictures/less.png) 545px 348px no-repeat,
+				url(pictures/compass.png) 548px 439px no-repeat,
+				#FFF;
+			}
+		#Tomato img {
+			margin-top:40px;
+			width:500px;
+			}
+		#Nose h2 {
+			margin-top:100px;
+			font-size:70px;
+			color:#B94D2F;
+			}
+		#CamelRule h2 {
+			font-size:220px;
+			}
+			#CamelRule h2 span {
+				margin-left:0.1em;
+				color:#0174A7;
+				font-family:'Arial Unicode MS', sans-serif;
+				}
+		#CAPS h2 {
+			font-size:120px;
+			}
+			#CAPS h2 span {
+				color:#0174A7;
+				}
+		#Nuclear h2 {
+			margin-top:160px;
+			text-shadow:
+				0 3px 0 #000,
+				0 0 50px rgba(255, 255, 255, 0.7);
+			font-size:120px;
+			color:#e84747;
+			}
+		#WAT h2,
+		#WATold h2 {
+			font-size:90px;
+			}
+			#WAT h2 ins,
+			#WAT h2 del {
+				position:relative;
+				text-decoration:none;
+				}
+				#WAT h2 ins:after,
+				#WAT h2 del:after {
+					font-size:0.5em;
+					-webkit-transform-origin:0 100%;
+					-moz-transform-origin:0 100%;
+					-ms-transform-origin:0 100%;
+					-o-transform-origin:0 100%;
+					transform-origin:0 100%;
+					-webkit-transform:rotate(-20deg);
+					-moz-transform:rotate(-20deg);
+					-ms-transform:rotate(-20deg);
+					-o-transform:rotate(-20deg);
+					transform:rotate(-20deg);
+					}
+				#WAT h2 ins:after {
+					position:absolute;
+					top:-0.4em;
+					left:30%;
+					color:#4C7BB1;
+					content:'* уже';
+					}
+			#WAT h2 del {
+				position:relative;
+				text-decoration:none;
+				}
+				#WAT h2 del:before {
+					position:absolute;
+					top:0.75em;
+					right:-0.1em;
+					left:-0.1em;
+					height:0.1em;
+					background:#C00;
+					content:'';
+					}
+				#WAT h2 del:after {
+					position:absolute;
+					top:-0.4em;
+					left:40%;
+					color:#C00;
+					content:'передумали';
+					}
+		#WhatElse h2 {
+			font-size:120px;
+			}
+	</style>
+</head>
+<body style="transform: none;" class="list">
+	<header class="caption">
+		<h1>Web Apps Mythbusting</h1>
+		<p><a href="http://twitter.com/miguelschneider">Miguel Schneider (@miguelschneider)</a>, <a href="http://twitter.com/danielcoloma">Daniel Coloma (@danielcoloma)</a></p>
+	</header>
+	<section class="slide cover visited" id="Cover"><div>
+                <h4 style="padding: 0px; color:white;margin-left: 600px; font-size: 12px; text-align: right"> OWT Checkpoint - 30th Sept 2014</h4>
+                <h4 style="padding: 0px; color:white;margin-left: 600px; font-size: 12px; text-align: right"> Daniel Coloma</h4>
+                <h4 style="padding: 0px; color:white;margin-left: 600px; font-size: 12px; text-align: right"> Miguel Schneider</h4>
+		<h2 style="padding-top:250px;padding-left: 200px;">Web Apps Mythbusting</h2>
+		<img src="images/t-shirt.png" alt="">
+	</div></section>
+	<section class="slide cover visited" id="Myth1"><div>
+		<h2  style="background-color: white;">Myth #1</h2>
+                <h3  style="background-color:rgba(255,255,255,0.7);">I need to create a specific version of the app for every device/browser</h3>
+		<img width="100%" height="100%" src="images/alldevices.jpg" alt="">
+	</div></section>
+	<section class="slide cover visited" style="background-color: white;" id="Myth1-Busted"><div>
+		<h2>Responsive Design</h2>
+                <h3>Isn't write once run anywhere a reality today?</h3>
+		<img style="position:absolute;right:0px;bottom:0px;left:300px;top:300px" src="images/responsive.jpg" alt="">
+	</div></section>
+	<section class="slide cover visited" id="Myth2"  style="background-color: white;"><div>
+		<h2>Myth #2</h2>
+                <h3>There are no APIs in HTML5</h3>
+		<img src="images/tools.png" style="position:absolute; top:300px" alt="">
+	</div></section>
+	<section class="slide cover visited" style="background-color: white;" id="Myth2-Busted-1"><div>
+		<h2></h2>
+		<img height="100%" width="100%" src="images/HTML5-APIs-2011.png" alt="">
+	</div></section>
+	<section class="slide cover visited" style="background-color: white;" id="Myth2-Busted-2"><div>
+		<h2></h2>
+		<img height="100%" width="100%" src="images/HTML5-APIs-2013.png" alt="">
+	</div></section>
+	<section class="slide cover visited" id="myth3"><div>
+		<h2  style="background-color: white;">Myth #3</h2>
+                <h3  style="background-color:rgba(255,255,255,0.7);">HTML5 Apps do not work offline</h3>
+		<img src="images/offline.jpg" alt="">
+	</div></section>
+
+	<section class="slide visited" id="myth3-busted"><div>
+		<h2>Plenty of options to make your app work offline</h2>
+		<ul>
+			<li>Application Cache: </li>
+			<li>IndexedDB:</li>
+			<li>Local Storage:</li>
+		</ul>
+		<p class="note">And more coming <b>Service Workers</b>, intended to replace AppCache with a more flexible solution </p>
+	</div></section>
+
+	<section class="slide cover visited" id="myth4"><div>
+		<h2>Myth #4</h2>
+                <h3>Web Apps cannot be installed</h3>
+		<img width="100%" height="100%" src="images/urlbar.jpg" alt="">
+	</div></section>
+
+<section class="slide visited" id="myth4-busted"><div>
+		<h2>In many platforms they are already first class citizens</h2>
+		<ul>
+			<li>Firefox for all the platforms</li>
+			<li>Chrome Desktop</li>
+		</ul>
+		<p class="note">And in many more platforms (iOS, Chrome Android...) supported via the fallback <b>"Add to Homescreen"</b></p>
+	</div></section>
+
+
+	<section class="slide cover visited" id="myth5"><div>
+		<h2 style="background-color: white;">Myth #5</h2>
+                <h3 style="background-color:rgba(255,255,255,0.7);">An appstore is still needed</h3>
+		<img width="100%" height="100%" src="images/walmart.jpg" alt="">
+	</div></section>
+
+	<section class="slide cover visited" style="background-color: white;" id="myth5-busted"><div>
+		<h2>You can do without it</h2>
+                <h3>Finantial Times is the best example</h3>
+		<img  style="position:absolute; left: 300px; top:260px" src="images/AddHome.png" alt="">
+		<p style="position:absolute; bottom: 0px;" class="note">... and you can always create a native version of your web app, e.g via PhoneGap</p>
+	</div></section>
+
+	<section class="slide cover visited" style="background-color: white;" id="I-know-HTML"><div>
+		<h2>So I know HTML</h2>
+		<img style="position:absolute;right:0px;bottom:0px;left:300px;top:300px" src="images/i_know_html.jpg" alt="">
+	</div></section>
+	<section class="slide visited" id="doing-it"><div>
+		<h2>Are you telling me I can</h2>
+		<ul>
+			<li>Create a WebApp </li>
+			<li>Use multiple device APIs</li>
+			<li>Make it work offline</li>
+			<li>... and distribute it to many platforms?</li>
+		</ul>
+	</div></section>
+	<section class="slide cover visited" style="background-color: white;" id="ha-ha"><div>
+		<img style="position:absolute;right:0px;bottom:0px;left:300px;top:150px" src="images/haha.jpg" alt="">
+	</div></section>
+	<section class="slide cover visited" style="background-color: white;" id="talk-is-cheap"><div>
+		<h2 style="color:white;" >"Talk is cheap, show me the code"<br>(Linus Torvalds)</h2>
+		<img width="100%" height="100%" src="images/linus.jpg" alt="">
+	</div></section>
+
+	<section class="slide cover visited" id="try-it"><div>
+		<a href="http://tidowd.servidores.ferimer.es/" target="_blank">
+                <h1 style="color:white; font-size: 90px"> Try it! </h1>
+                <a>
+		  <img width="100%" height="100%" src="images/red-button.png">
+	</div></section>
+
+	<section class="slide" id="ThankYou"><div>
+		<h2>Thank You!</h2>
+	</div></section>
+	<p class="badge"><a href="https://github.com/shower/shower">Powered by Shower</a></p>
+	<div class="progress"><div aria-valuetext="Slideshow Progress: 84.21%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="84.21%" role="progressbar" style="width: 84.21%;"></div></div>
+	<script src="js/watch.js" async=""></script><script src="js/shower.js"></script>
+	<!-- Copyright © 2010–2014 Vadim Makeev — pepelsbey.net -->
+	<script>(function(b,c,a){(c[a]=c[a]||[]).push(function(){try{c.yaCounter155532=new Ya.Metrika({id:155532})}catch(a){}});var e=b.getElementsByTagName('script')[0],d=b.createElement('script'),a=function(){e.parentNode.insertBefore(d,e)};d.async=!0;d.src='//mc.yandex.ru/metrika/watch.js';'[object Opera]'==c.opera?b.addEventListener('DOMContentLoaded',a):a()})(document,window,'yandex_metrika_callbacks');</script><noscript><img src="//mc.yandex.ru/watch/155532" alt=""></noscript>
+
+<section aria-label="Slide Content: Auto-updating" aria-relevant="additions" aria-live="assertive" role="region" class="live-region"><div>
+		<img src="images/webs-before.jpg" alt="">
+	</div></section></body></html>
